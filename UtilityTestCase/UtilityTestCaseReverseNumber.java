@@ -18,6 +18,7 @@ class UtilityTestCaseReverseNumber {
 	void failTest() {
 		int check=UtilityForReverseNumber.reverseNumber(123);
 		assertEquals(123, check);
+		
 	}
 
 }
