@@ -1,5 +1,6 @@
 package main;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import main.Utility.UtilityForVendingMachine;
@@ -7,15 +8,13 @@ import main.Utility.UtilityForVendingMachine;
 public class VendingMachine {
 	public final static Logger logger=Logger.getLogger("VendingMachine");
 	public static void main(String[] args) {
-		int[] arrayOfNotes=new int[8];
 		
-		
-		
+		logger.log(Level.INFO,"Enter amount :- ");
 		//getting input from user
-		int getInput=UtilityForVendingMachine.getUserInput();
+		int getInput=UtilityForVendingMachine.getInput();
 		
 		//checking for change from machine
-		UtilityForVendingMachine.change(getInput);
+		UtilityForVendingMachine.ChangeFromVendingMachine(getInput);
 		
 		
 	}
