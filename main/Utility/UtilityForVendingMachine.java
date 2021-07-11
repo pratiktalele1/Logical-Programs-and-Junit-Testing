@@ -16,6 +16,8 @@ public class UtilityForVendingMachine {
 	}
 	
 	public static void change(int getInput) {
-		if(getInput<1000)
+		if(getInput<1000) {
+			
+		}
 	}
 }
